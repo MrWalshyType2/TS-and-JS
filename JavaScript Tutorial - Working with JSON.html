@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://www.qa.com/learning-packages/Apprenticeships/SDL4/Module_2/02-JavaScript-todo-app.html -->
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><script>try {
+                        Object.defineProperty(screen, "availTop", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availLeft", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availWidth", { value: 1536 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availHeight", { value: 864 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "colorDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "keyboard", { value: undefined });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "deviceMemory", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "webkitTemporaryStorage", { value: undefined });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "webkitPersistentStorage", { value: undefined });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "doNotTrack", { value: null });
+                    } catch (e) {}
+                    
+                navigator.getBattery = function getBattery () {
+                let battery = {"charging":true,"chargingTime":0,"dischargingTime":null,"level":1}
+            
+                try {
+                    Object.defineProperty(battery, 'onchargingchange', {
+                        enumerable: true,
+                        configurable: false,
+                        writable: false,
+                        value: undefined
+                    })
+                } catch (e) {}
+                
+                try {
+                    Object.defineProperty(battery, 'onchargingtimechange', {
+                        enumerable: true,
+                        configurable: false,
+                        writable: false,
+                        value: undefined
+                    })
+                } catch (e) {}
+                
+                try {
+                    Object.defineProperty(battery, 'ondischargingtimechange', {
+                        enumerable: true,
+                        configurable: false,
+                        writable: false,
+                        value: undefined
+                    })
+                } catch (e) {}
+                
+                try {
+                    Object.defineProperty(battery, 'onlevelchange', {
+                        enumerable: true,
+                        configurable: false,
+                        writable: false,
+                        value: undefined
+                    })
+                } catch (e) {}
+                
+                    battery.addEventListener = function addEventListener () {
+                        return
+                    }
+                
+                return Promise.resolve(battery)
+                }
+            
+            try {
+                window.screenY = 0
+            } catch (e) { }
+        
+            try {
+                window.screenTop = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerHeight = 0
+            } catch (e) { }
+        
+            try {
+                window.screenX = 0
+            } catch (e) { }
+        
+            try {
+                window.screenLeft = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerWidth = 0
+            } catch (e) { }
+        </script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>JavaScript Tutorial - Working with JSON</title>
+    <link rel="stylesheet" href="./JavaScript Tutorial - Working with JSON_files/bootstrap.min.css">
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Williams, Peter</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">2057800.00000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Williams, Peter</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x0101002F8B50CBB92E5F41911ED786D3B798D0</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+
+  <body>
+
+    <div class="container">
+      <h1>Javascript Todo App</h1>
+
+      <div class="row mt-4">
+        <div class="col-8">
+          <ul id="todo-list">
+            
+          <li>delectus aut autem<a href="https://www.qa.com/learning-packages/Apprenticeships/SDL4/Module_2/02-JavaScript-todo-app.html#" class="btn btn-sm btn-danger m-1 delete">Delete</a></li><li>quis ut nam facilis et officia qui<a href="https://www.qa.com/learning-packages/Apprenticeships/SDL4/Module_2/02-JavaScript-todo-app.html#" class="btn btn-sm btn-danger m-1 delete">Delete</a></li><li>fugiat veniam minus<a href="https://www.qa.com/learning-packages/Apprenticeships/SDL4/Module_2/02-JavaScript-todo-app.html#" class="btn btn-sm btn-danger m-1 delete">Delete</a></li><li>et porro tempora<a href="https://www.qa.com/learning-packages/Apprenticeships/SDL4/Module_2/02-JavaScript-todo-app.html#" class="btn btn-sm btn-danger m-1 delete">Delete</a></li><li>laboriosam mollitia et enim quasi adipisci quia provident illum<a href="https://www.qa.com/learning-packages/Apprenticeships/SDL4/Module_2/02-JavaScript-todo-app.html#" class="btn btn-sm btn-danger m-1 delete">Delete</a></li></ul>
+        </div>
+        <div class="col-4">
+          <form>
+            <input type="text" class="form-control" id="todoTitle" placeholder="Todo title...">
+            <button onclick="newTodo()" class="addBtn btn btn-sm btn-primary form-control mt-3">Add
+          
+        </button></form></div>
+      </div>
+
+    </div>
+
+  
+
+  <script>
+    var json_data = [
+      {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false
+      },
+      {
+        "userId": 1,
+        "id": 2,
+        "title": "quis ut nam facilis et officia qui",
+        "completed": false
+      },
+      {
+        "userId": 1,
+        "id": 3,
+        "title": "fugiat veniam minus",
+        "completed": false
+      },
+      {
+        "userId": 1,
+        "id": 4,
+        "title": "et porro tempora",
+        "completed": true
+      },
+      {
+        "userId": 1,
+        "id": 5,
+        "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+        "completed": false
+      }
+    ];
+    var myList = document.getElementById("todo-list");
+
+    json_data.forEach(element => {
+      var listItem = document.createElement("li");
+      listItem.appendChild(
+        document.createTextNode(element.title) 
+      );
+      var deleteLink = document.createElement("a");
+
+      deleteLink.href = "#";
+      deleteLink.className = "btn btn-sm btn-danger m-1 delete";
+      deleteLink.appendChild(
+        document.createTextNode("Delete") 
+      );
+      listItem.appendChild(deleteLink);
+      myList.appendChild(listItem);
+    });
+    var closeButtons = document.getElementsByClassName("delete");
+    for (var i = 0; i < closeButtons.length; i++) {
+      closeButtons[i].addEventListener('click', deleteTodo, false);
+    }
+    function deleteTodo() {
+      var li = this.parentElement;
+      myList.removeChild(li);
+    }
+    function newTodo() {
+      var inputVal = document.getElementById("todoTitle").value;
+      var listItem = document.createElement("li");
+      listItem.appendChild(
+        document.createTextNode(inputVal) 
+      );
+      var deleteLink = document.createElement("a");
+      deleteLink.href = "#";
+      deleteLink.className = "btn btn-sm btn-danger m-1 delete";
+      deleteLink.appendChild(
+        document.createTextNode("Delete") 
+      );
+      listItem.appendChild(deleteLink);
+      myList.appendChild(listItem);
+    }
+  </script>
+
+<meta name="Robots" content="NOINDEX ">
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </body></html>
